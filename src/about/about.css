@@ -1,0 +1,32 @@
+.hover\:bg-dark::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(to right, rgba(63, 81, 181, 0.5), rgba(63, 81, 181, 0)); */
+    background: linear-gradient(to right, #8b56fc40, transparent);
+    opacity: 0;
+    transition: opacity 1s ease;
+    border-radius: inherit;
+    z-index: -1;
+  }
+  .hover\:bg-dark:hover::before {
+    opacity: 1;
+  }
+
+
+  .hover\:bg-light::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(to right, rgba(63, 81, 181, 0.5), rgba(63, 81, 181, 0)); */
+    /* background: linear-gradient(to right, #ec489950, transparent); */
+    background:linear-gradient(to right, #f6656e80, rgba(255, 239, 224, 0));
+    opacity: 0;
+    transition: opacity 1s ease;
+    border-radius: inherit;
+    z-index: -1;
+  }
+  .hover\:bg-light:hover::before {
+    opacity: 1;
+  }
+  
