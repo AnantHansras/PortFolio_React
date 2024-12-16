@@ -21,7 +21,7 @@ function App() {
 const darkMode = useSelector((state) => state.darkMode.isDarkMode);
   return (
     
-    <div className='fixed top-0 w-full h-full overflow-y-scroll'>
+    <div className='fixed top-0 w-full h-full overflow-clip'>
         <div className={`${darkMode ? 'bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]':
         'transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]'} absolute top-0 z-[-2] h-screen w-screen`} >
       
