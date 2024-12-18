@@ -22,13 +22,48 @@ const Navbar = ({ section1Ref, section2Ref, section3Ref, section4Ref, scrollToSe
       </h1>
 
       {/* Desktop Menu */}
-      <div className='hidden md:flex flex-row gap-x-12 text-xl overflow-y-visible font-bold'>
-        <button onClick={() => scrollToSection(section1Ref)} className='cursor-pointer overflow-visible hover:text-cyan-300 transition-all duration-200'>About</button>
-        <button onClick={() => scrollToSection(section4Ref)} className='cursor-pointer overflow-visible hover:text-cyan-300 transition-all duration-200'>Experience</button>
-        <button onClick={() => scrollToSection(section2Ref)} className='cursor-pointer overflow-visible hover:text-cyan-300 transition-all duration-200'>Skills</button>
-        <button onClick={() => scrollToSection(section3Ref)} className='cursor-pointer overflow-visible hover:text-cyan-300 transition-all duration-200'>Projects</button>
-        <DarkModeToggler />
-      </div>
+      <div className="hidden md:flex flex-row gap-x-12 text-xl font-bold justify-center items-center group">
+    <button
+      onClick={() => scrollToSection(section1Ref)}
+      className={`relative cursor-pointer px-2 py-1 ${
+        darkMode
+          ? 'hover:text-cyan-300 before:bg-gradient-to-r from-[#8e44ad]/50 to-[#5e60ce]/50'
+          : 'hover:text-[#8e44ad] before:bg-gradient-to-r from-[#ff7eb3]/50 to-[#ff758c]/50'
+      } transition-all duration-500 transform before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 before:origin-right before:transition-transform before:duration-500 hover:before:scale-x-100 hover:before:origin-left peer`}>
+      About
+    </button>
+    <button
+      onClick={() => scrollToSection(section4Ref)}
+      className={`relative cursor-pointer px-2 py-1 ${
+        darkMode
+          ? 'hover:text-cyan-300 before:bg-gradient-to-r from-[#8e44ad]/50 to-[#5e60ce]/50'
+          : 'hover:text-[#8e44ad] before:bg-gradient-to-r from-[#ff7eb3]/50 to-[#ff758c]/50'
+      } transition-all duration-500 transform before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 before:origin-right before:transition-transform before:duration-500 hover:before:scale-x-100 hover:before:origin-left peer`}
+    >
+      Experience
+    </button>
+    <button
+      onClick={() => scrollToSection(section2Ref)}
+      className={`relative cursor-pointer px-2 py-1 ${
+        darkMode
+          ? 'hover:text-cyan-300 before:bg-gradient-to-r from-[#8e44ad]/50 to-[#5e60ce]/50'
+          : 'hover:text-[#8e44ad] before:bg-gradient-to-r from-[#ff7eb3]/50 to-[#ff758c]/50'
+      } transition-all duration-500 transform before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 before:origin-right before:transition-transform before:duration-500 hover:before:scale-x-100 hover:before:origin-left peer`}>
+      Skills
+    </button>
+    <button
+      onClick={() => scrollToSection(section3Ref)}
+      className={`relative cursor-pointer px-2 py-1 ${
+        darkMode
+          ? 'hover:text-cyan-300 before:bg-gradient-to-r from-[#8e44ad]/50 to-[#5e60ce]/50'
+          : 'hover:text-[#8e44ad] before:bg-gradient-to-r from-[#ff7eb3]/50 to-[#ff758c]/50'
+      } transition-all duration-500 transform before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-full before:scale-x-0 before:origin-right before:transition-transform before:duration-500 hover:before:scale-x-100 hover:before:origin-left peer`}>
+      Projects
+    </button>
+    <DarkModeToggler />
+  </div>
+
+
 
       {/* Hamburger Icon for Mobile */}
       <div className='md:hidden flex gap-x-2'>
@@ -60,3 +95,4 @@ const Navbar = ({ section1Ref, section2Ref, section3Ref, section4Ref, scrollToSe
 };
 
 export default Navbar;
+

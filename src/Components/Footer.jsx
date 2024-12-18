@@ -8,7 +8,7 @@ const Footer = () => {
 return (
     <div
       className={`${
-        darkMode ? 'bg-[#111111] text-white' : 'bg-[#e0cdd3] text-black'
+        darkMode ? 'bg-[#1c1c1c] text-white' : 'bg-[#e0e0e0] text-black'
       } flex justify-evenly items-center p-10 px-2 md:p-14 md:px-14 mt-16 md:mt-20`}
     >
       <div>

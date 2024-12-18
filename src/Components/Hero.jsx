@@ -45,8 +45,8 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          I am a passionate web developer with a keen interest in building modern, user-friendly websites and web applications.
-          I thrive on creating intuitive, responsive web experiences that have a real-world impact.
+          Passionate web developer with a strong focus on crafting modern, user-centric websites and web applications. 
+          Dedicated to delivering intuitive, responsive, and impactful web experiences that address real-world needs and enhance user satisfaction.
         </motion.p>
 
         <motion.div
@@ -57,7 +57,7 @@ const Hero = () => {
         >
           <button
             onClick={() => setShowModal(true)}
-            className={`flex items-center font-semibold py-2 px-6 border rounded-2xl transition-transform transform duration-200 hover:scale-105 shadow-lg ${
+            className={`flex items-center font-semibold py-2 px-6 border rounded-2xl transition-all hover:scale-9 duration-200  shadow-lg ${
               darkMode
                 ? 'bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white border-blue-500'
                 : 'bg-transparent hover:bg-purple-500 text-purple-700 hover:text-white border-purple-500'
